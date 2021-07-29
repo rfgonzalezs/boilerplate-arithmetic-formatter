@@ -39,7 +39,6 @@ def arithmetic_arranger(problems, Bool = None):
                     Row2 = '\n'+(op[cont0])+(' ')+str(num[i+1])
                     lin = str('-'*(cant_dig[i]+cant_dig[i+1]+1))
                 else:
-
                     if cant_dig[i+1] == 1:
                         Row1 = (' '*(cant_dig[i]))+str(num[i])
                         Row2 = '\n'+(op[cont0])+(' '*(cant_dig[i]))+str(num[i+1])
@@ -102,16 +101,3 @@ def arithmetic_arranger(problems, Bool = None):
                 else:
                     arranged_problems = arranged_problems+' '*6+str(res_sum[i])#+'\t'
     return arranged_problems#string of organized values
-
-print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
-print(arithmetic_arranger(["3 + 855", "3801 - 2", "45 + 43", "123 + 49"])) 
-print(arithmetic_arranger(["11 + 4", "3801 - 2999", "1 + 2", "123 + 49", "1 - 9380"])) 
-print(arithmetic_arranger(["32 - 698", "1 - 3801", "45 + 43", "123 + 49"], True)) 
-#print(arithmetic_arranger(["44 + 815", "909 - 2", "45 + 43", "123 + 49", "888 + 40", "653 + 87"]))    
-#print(arithmetic_arranger(["3 / 855", "3801 - 2", "45 + 43", "123 + 49"]))    
-#print(arithmetic_arranger(["24 + 85215", "3801 - 2", "45 + 43", "123 + 49"]))
-#print(arithmetic_arranger(["98 + 3g5", "3801 - 2", "45 + 43", "123 + 49"]))
-
-"""  11      3801      1      123         1
- \n+  4    - 2999    + 2    +  49    - 9380
- \n----    ------    ---    -----    ------"""
